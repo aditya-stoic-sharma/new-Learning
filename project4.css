@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: url(resources/swimmer.jpg) no-repeat center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: white;
+    width: 60%;
+    height: 250px;
+    border-radius: 30px;
+    box-shadow: 0 0 3px;
+
+}
+
+#timer{
+    text-align: center;
+    margin: 0px auto;
+    font-size: 72px;
+    padding: 35px;
+    width: 100%;
+}
+
+.buttons{
+    text-align: center;
+}
+
+button{
+    margin: 10px;
+    border: none;
+}
+
+button i{
+    font-size: 2rem;
+    padding: 10px;
+    color: white;
+}
+
+#play{
+    background-color: green;
+}
+#reset{
+    background-color: red;
+}
+#pause{
+    background-color: orange;
+}

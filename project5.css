@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+}
+
+body{
+    background: url(resources/books.jpg) no-repeat center center /cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-task-container{
+    background-color: white;
+    width: 350px;
+    padding: 20px 10px;
+    display: flex;
+    box-shadow: 0 0 3px;
+    border-radius: 10px;
+
+}
+input{
+    flex: 5;
+    margin-right: 5px;
+    font-size: 1.2rem;
+    padding: 5px;
+    border-radius: 5px;
+}
+#add-task{
+    font-size: 1.1rem;
+    padding: 5px;
+    flex: 1;
+    background-color: white;
+    border: green solid 2px;
+    border-radius: 10px;
+    color: green;
+    transition: .3s;
+}
+#add-task:hover{
+    background-color: green;
+    color: white;
+}
+#task-container{
+    margin-top: 25px;
+    border-radius: 10px;
+    
+}
+.task{
+    display: flex;
+    background-color: rgb(240, 232, 232);
+    border: 2px solid black;
+    text-decoration: none;
+    list-style: none;
+    border-radius: 10px;
+    padding: 8px 10px;
+    margin: 5px 0px;
+    justify-content: space-between;
+}
+.task li{
+    font-size: 1.2rem;
+    flex: 4;
+    padding: 5px;
+}
+.checkTask{
+    font-size: 1.1rem;
+    margin: 0px 2px;
+    flex: 1;
+    border: 2px solid orange;
+    color: orange;
+    border-radius: 7px;
+
+}
+.checkTask:hover{
+    background-color: orange;
+    color: white;
+}
+.deleteTask{
+    font-size: 1.1rem;
+    margin: 0px 2px;
+    flex: 1;
+    color: red;
+    border: 2px solid red;
+    border-radius: 7px;
+}
+.deleteTask:hover{
+    background-color: red;
+    color: white;
+}

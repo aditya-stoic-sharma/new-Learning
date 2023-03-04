@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+}
+body{
+    background: url(resources/fog-foggy-forest-18855.jpg) no-repeat center center / cover;
+    height: 100vh;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.open-btn{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    font-size: 2rem;
+    padding: 5px;
+    width: 350px;
+    height: 80px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 3px black;
+    transition: .5s;
+}
+
+.open-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+#modal{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 200px;
+    font-size: 1.5rem;
+    transform: translate(-50%, -50%);
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+
+    animation-name: animatemodal;
+    animation-duration: .4s;
+}
+
+.close-btn{
+    font-size: 3rem;
+    cursor: pointer;
+    color: red;
+}
+.close-btn:hover{
+    cursor: pointer;
+    font-size: 3rem;
+    color: red;
+}
+#modal-container{
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,.2);
+}
+
+
+/* Modal animation section  */
+
+@keyframes animatemodal {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to{
+        top: 50%;
+        opacity: 1;
+    }
+}
